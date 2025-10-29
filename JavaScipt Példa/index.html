@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript példa</title>
+</head>
+<body>
+  <h1>Üdvözlet!</h1>
+  <p>Kattints a gombra, hogy köszönjek neked:</p>
+  
+  <button onclick="koszones()">Kattints rám!</button>
+  
+  <script>
+    function koszones() {
+      const nev = prompt("Mi a neved?");
+      if (nev) {
+        alert(`Szia, ${nev}! Örülök, hogy itt vagy!`);
+      } else {
+        alert("Nem adtál meg nevet 😅");
+      }
+    }
+  </script>
+</body>
+</html>
