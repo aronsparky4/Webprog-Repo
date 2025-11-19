@@ -58,3 +58,40 @@ function DOMNavigalas()
     }
     jelenlegiElem.style.color = "yellow"
 }
+
+let gombszam = 1
+function UjGombHozzaadas()
+{
+    let UjGomb = document.createElement("button")
+    UjGomb.innerHTML = gombszam + ". gomb"
+    UjGomb.onclick = function ()
+    {
+        this.remove()
+        gombszam--
+    }
+    document.getElementById("DinamikusTarolo").appendChild(UjGomb)
+    gombszam++
+}
+
+document.addEventListener("DOMContentLoaded", 
+    function(){
+        let input = document.getElementById("esemenyInput")
+        let doboz = document.getElementById("esemenyBox")
+
+        input.addEventListener("keyup", function(e){
+            console.log("Leütött billentyű", e.key)
+        })
+
+        doboz.addEventListener("mouseenter", function(){
+            this.style.backroundColor = "lightgreen";
+        })
+
+        doboz.addEventListener("mouseleave", function(){
+            this.style.backroundColor = "purple";
+        })
+
+        doboz.addEventListener("click", function(){
+            this.innerHTML = "kattintottál!"
+        })
+    }
+)
