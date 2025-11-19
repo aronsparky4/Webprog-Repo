@@ -1,0 +1,18 @@
+.doboz
+{
+    border: 2px solid black;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.piros
+{
+    color: red;
+    font-size: large;
+}
+
+.kek
+{
+    color: blue;
+    font-size: large;
+}

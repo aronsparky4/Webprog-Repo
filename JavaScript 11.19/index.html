@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="doboz">
+        <h3>Osztályok kezelése</h3>
+        <p id="osztalypelda">Ez egy szöveg</p>
+        <button onclick="OsztalyHozzaadas()">Piros szín hozzáadása</button>
+        <button onclick="OsztalyTorles()">Formázás törlése</button>
+        <button onclick="OsztalyCsere()">Kékre váltás</button>
+    </div>
+
+    <div class="doboz">
+        <p class="kijelolheto">Ez egy kijelölhető p</p>
+        <p class="kijelolheto">Ez egy kijelölhető p</p>
+        <p class="kijelolheto">Ez egy kijelölhető p</p>
+        <button onclick="OsszesKijeloles()">összes kijelölése</button>
+    </div>
+    <div class="doboz">
+        <h3>DOM navigáció</h3>
+        <div class="szulo">
+            <p class="">Ez egy kijelölhető p</p>
+            <p class="">Ez egy kijelölhető p</p>
+            <p class="">Ez egy kijelölhető p</p>
+        </div>
+        <button onclick="DOMNavigalas()">következő elem kiválasztása</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
