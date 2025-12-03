@@ -1,8 +1,9 @@
 .doboz
 {
-    border: 2px solid black;
+    border: 5px solid black;
     padding: 15px;
     margin: 10px 0;
+    background-color: white;
 }
 
 .piros
@@ -15,4 +16,9 @@
 {
     color: blue;
     font-size: large;
+}
+
+body
+{
+    background-color: brown;
 }
