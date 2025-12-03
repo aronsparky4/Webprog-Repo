@@ -8,4 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "login.html"
         })
     }
+    if (!form)
+    {
+        return
+    }
+    form.addEventListener("submit", (event) =>{
+        event.preventDefault()
+
+        const username = document.getElementById("username").value
+        const email = document.getElementById("email").value
+        const passwd = document.getElementById("passwd").value
+
+        if(!username || !email || !passwd)
+        {
+            alert("Töltsd ki az összes mezőt!")
+            return
+        }
+    })
 })
