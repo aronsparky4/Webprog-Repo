@@ -9,6 +9,7 @@ function OsztalyHozzaadas()
 function OsztalyTorles(){
     let elem = document.getElementById("osztalypelda")
     elem.classList.remove("piros")
+    elem.classList.remove("kek")
 }
 
 function OsztalyCsere()
