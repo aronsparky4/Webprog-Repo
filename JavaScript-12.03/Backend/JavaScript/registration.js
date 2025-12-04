@@ -8,10 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "login.html"
         })
     }
-    if (!form)
-    {
-        return
-    }
+    if (!form) return
+    
     form.addEventListener("submit", (event) =>{
         event.preventDefault()
 
@@ -24,5 +22,29 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Töltsd ki az összes mezőt!")
             return
         }
+
+        const stored = localStorage.getItem("users")
+        let users = []
+        if(stored)
+        {
+            try{
+                users = JSON.parse(stored)
+            }
+            catch(e)
+            {
+                users = []
+            }
+        }
+
+        const exists = users.some(u => u.username === username)
+        if(exists)
+        {
+            alert("ez a felhasználó név már foglalt!")
+            return
+        }
+        users.push({username, email, passwd})
+        localStorage.setItem("users", JSON.stringify(users))
+        alert("Sikeres volt a regisztráció")
+        window.location.href = "login.html"
     })
 })
