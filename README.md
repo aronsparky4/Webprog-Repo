@@ -1,2 +1,2 @@
-# Webprog-Repo
-Webprogramozás gyakorlati fájlok depója
+# Webprog-Repo (egyetem repo 1)
+Webprogramozás (I. - II.) gyakorlati fájlok depója
