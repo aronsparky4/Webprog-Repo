@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/quizoldal.css">
+    <title>Tudáskérdés oldal</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="startlap.html">Kezdőlap</a>
+        <a href="wikioldal.html">Wiki oldal</a>
+        <a href="quizoldal.html">Quiz oldal</a>
+        <a href="lelkitaplalek.html">Lelki táplálék oldal</a>
+    </div>
+    <div class="box">
+        <h1>Tudáskérdés oldal</h1>
+    </div>
+    <div class="box">
+        <h1>Kérdés 1.</h1>
+        <p>Melyik évben jelent meg a JavaScript?</p>
+        <button class="answer-button" data-correct="false">1995</button>
+        <button class="answer-button" data-correct="true">1996</button>
+        <button class="answer-button" data-correct="false">1997</button>
+        <p></p>
+        <h1>Kérdés 2.</h1>
+        <p>Milyen programot használunk HTML/CSS valamint JS fájlok készítésére?</p>
+        <button class="answer-button" data-correct="false">Paint</button>
+        <button class="answer-button" data-correct="true">JetBrains WebStorm</button>
+        <button class="answer-button" data-correct="false">Word</button>
+        <button class="answer-button" data-correct="true">VS Code</button>
+        <p></p>
+        <h1>Kérdés 3.</h1>
+        <p>Melyik kulcsszóval hozunk létre egy egyenletet JavaScriptben?</p>
+        <button class="answer-button" data-correct="true">let</button>
+        <button class="answer-button" data-correct="false">var</button>
+        <button class="answer-button" data-correct="false">equ</button>
+        <p></p>
+        <h3>Kérdés 4.</h3>
+        <p>Mit csinál a "===" operátor</p>
+        <button class="answer-button" data-correct="true">Összehasonlít értéket és típust is</button>
+        <button class="answer-button" data-correct="false">Csak értéket hasonlít össze</button>
+        <button class="answer-button" data-correct="false">Hozzárendelést végez</button>
+    </div>
+    <div class="box">
+        <h2 id="score-display">Pontszám: 0</h2>
+    </div>
+    <div class="box">
+        <button id="restart-quiz" onclick="restartQuiz()">újrakezdés</button>
+    </div>
+<script src="../JavaScript/quizoldal.js"></script>
+</body>
+</html>
