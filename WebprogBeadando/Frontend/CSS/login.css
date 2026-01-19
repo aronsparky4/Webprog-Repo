@@ -1,0 +1,20 @@
+.box{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+}
+
+body{
+    background-color: purple;
+}
+
+button{
+    background-color: plum;
+    border: none;
+    cursor: pointer;
+}

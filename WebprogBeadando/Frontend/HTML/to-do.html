@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo alkalmazás</title>
+    <link rel="stylesheet" href="../CSS/todo.css">
+</head>
+<body>
+<div class="full-box">
+<h1>ToDo Listák</h1>
+<div class="todo-input">
+    <input type="text" id="todoBeker" placeholder="Egy új teendőt írj ide...">
+    <select id="fontossagi">
+        <option value="3">fontos</option>
+        <option value="2">normál</option>
+        <option value="1">hanyatló</option>
+    </select>
+    <button onclick="todoHozzaadas()">Hozzáadás</button>
+</div>
+</div>
+<div class="full-box">
+    <ul id="todoLista"></ul>
+</div>
+
+<div class="full-box">
+    <a href="homepage.html">Vissza a főoldalra</a>
+</div>
+<script src="../../Backend/JavaScript/to-do.js"></script>
+</body>
+</html>

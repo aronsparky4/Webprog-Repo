@@ -1,0 +1,51 @@
+/*Külön CSS fájl a To-Do oldalnak*/
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#todoList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+.priority-3{ /*fontos*/
+    background-color: #ffecec;
+    border-left: 6px solid #e03b3b; 
+}
+.priority-2{ /*normál*/
+    background-color: #f7f7f7; 
+}
+.priority-1{ /*hanyatló*/
+    background-color: transparent;
+    color: #777;
+    opacity: 0.6; 
+}
+.done span{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.delete{
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.full-box{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+body{
+    background-color: purple;
+}

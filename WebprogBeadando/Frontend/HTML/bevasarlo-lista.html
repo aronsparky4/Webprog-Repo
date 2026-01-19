@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="full-box">
+        <h1>Bevásárló lista</h1>
+    </div>
+    <div class="full-box">
+        <h2>Új tétel hozzáadása</h2>
+        <form id="hozzaadasForm">
+            <label for="TetelNev">Tétel neve:</label><br>
+            <input type="text" id="TetelNev" name="TetelNev" required><br>
+            <label for="kategoria">Kategória</label>
+            <select id="kat_Valasztas">
+                <option value="hus">Hús</option>
+                <option value="zoldseg">zöldség</option>
+                <option value="vegyi">vegyi áru</option>
+                <option value="egyeb">egyéb</option>
+            </select>
+            <p>
+            <label for="MennyisegDB">Mennyiség:</label><br>
+            <input type="number" id="MennyisegDB" name="MennyisegDB" required><br>
+            <button type="submit">Hozzáadás</button>
+        </form>
+    </div>
+    <div class="full-box">
+        <h2>Bevásárló lista</h2>
+        <ul id="BevasarloLista"></ul>
+    </div>
+    <div class="full-box">
+        <a href="homepage.html">Vissza a főoldalra</a>
+    </div>
+<script src="../../Backend/JavaScript/bevasarlolista.js"></script>
+</body>
+</html>

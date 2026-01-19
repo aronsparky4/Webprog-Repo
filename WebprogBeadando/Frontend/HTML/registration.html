@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/registration.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h3>Regisztráció</h3>
+            <form id="registrationForm">
+                <label for="username">Felhasználónév</label>
+                <input type="text" id="username" name="usermane">
+                <br>
+
+                <label for="email">Email cím</label>
+                <input type="email" id="email" name="email">
+                <br>
+
+                <label for="passwd">Jelszó</label>
+                <input type="password" id="passwd" name="passwd">
+                <button type="submit">Regisztráció</button>
+            </form>
+            <p>
+                Van már fiókod?
+                <button id="goToLogin">Jelenkezz be!</button>
+            </p>
+    </div>
+<script src="../../Backend/JavaScript/registration.js"></script>
+</body>
+</html>

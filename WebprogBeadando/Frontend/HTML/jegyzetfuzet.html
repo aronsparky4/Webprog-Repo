@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/jegyzetek.css">
+    <title>Jegyzetek</title>
+</head>
+<body>
+<div class="full-box">
+    <h1>Jegyzeteim</h1>
+</div>
+<div class="full-box">
+    <h2>Új jegyzet hozzáadása</h2>
+    <form id="noteForm">
+        <label for="JegyzetCim">Cím:</label><br>
+        <input type="text" id="JegyzetCim" name="JegyzetCim" required><br>
+        <br>
+        <label for="JegyzetTartalom">Tartalom:</label><br>
+        <textarea id="JegyzetTartalom" name="JegyzetTartalom" required></textarea><br>
+        <button type="submit">Hozzáadás</button>
+    </form>
+</div>
+<div class="full-box">
+    <ul id="JegyzetLista"></ul>
+</div>
+<div class="full-box">
+    <a href="homepage.html">Vissza a főoldalra</a>
+</div>
+<script src="../../Backend/JavaScript/jegyzetek.js"></script>
+</body>
+</html>

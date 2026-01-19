@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Frontend/CSS/minigames.css">
+    <title>Mini Játékok</title>
+</head>
+<body>
+    <div class="full-box"><h1>Mini Játékok</h1></div>
+    <div class="full-box">
+        <h1>Guess the number</h1>
+        <h3>Gondoltam egy számra 1 és 100 között</h3>
+        <input type="number" id="felhasznaloValasz" placeholder="Tippedet ide írd...">
+        <button onclick="valaszCsekk()">Tipp ellenőrzése</button>
+    </div>
+    <div class="full-box">
+        <h1>Kő-papír-olló</h1>
+        <h3>Válasz egyett!</h3>
+        <select id="jatekValasz">
+            <option value="ko">Kő</option>
+            <option value="papir">Papír</option>
+            <option value="ollo">Olló</option>
+        </select>
+        <button onclick="jatekInditas()">Játék indítása</button>
+        <h3 id="valasz"></h3>
+    </div>
+    <div class="full-box">
+        <a href="homepage.html">Vissza a főoldalra</a>
+    </div>
+<script src="../../Backend/JavaScript/minigames.js"></script>
+</body>
+</html>
